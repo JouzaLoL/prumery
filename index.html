@@ -6,13 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Průměry známek</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <div id="app">
-        <input type="text" id="znamky" name="name" required minlength="4">
+    <div class="container" style="width: 80%; margin-top: 3rem;">
+        <div class="columns">
+            <div class="column">
+                <h1>Průměr známek</h1>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <h3>Jak na to</h3>
+                <ol style="margin-left: 3rem;">
+                    <li>Přihlaš se na <a href="http://isas.gytool.cz/prihlasit.php">iSAS</a>
+                    </li>
+                    <li>Zkopíruj své průběžné známky. Z jednoho předmětu, nebo ze všech najednou</li>
+                    <li>Vlož do pole Známky (nebo jen stiskni <kbd>Ctrl+V</kbd>)</li>
+                </ol>
+            </div>
+            <div class="column" id="copy-demo">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="column col-6">
+                <div id="input" class="form-group">
+                    <label class="form-label" for="name">Známky</label>
+                    <input class="form-input" type="text" id="znamky" name="name" placeholder="Sem vlož svoje známky">
+                </div>
+
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="column">
+                <div id="matches"></div>
+            </div>
+        </div>
     </div>
-    <div id="matches"></div>
+
     <script src="index.js"></script>
 </body>
 

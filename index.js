@@ -15,7 +15,6 @@ function parseZnamky(znamkySource) {
         return;
     }
     const regex = /([0-5]|A|N)\tZ([1-9])/gm;
-    let matches = regex.exec(znamky);
     var znamky = [];
     var m;
     do {
