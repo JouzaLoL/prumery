@@ -48,14 +48,6 @@ function parseZnamky(znamkySource) {
     document.querySelector("#matches").innerHTML = prumeryRows(prumery(znamky));
 }
 
-function prumer(znamky) {
-    const soucetHodnot = znamky
-        .reduce((soucet, znamka) => soucet += (znamka.hodnota * znamka.vaha), 0);
-    const soucetVah = znamky
-        .reduce((soucet, znamka) => soucet += znamka.vaha, 0);
-    return soucetHodnot / soucetVah;
-}
-
 function prumery(znamky) {
     const predmety = Array.from(new Set(znamky.map((znamka) => znamka.predmet)));
     const result = predmety
