@@ -13,72 +13,78 @@
 </head>
 
 <body>
-    <div class="container" style="margin-top: 1rem;">
+    <div class="container bg-purple">
         <div class="columns">
             <div class="column">
                 <h1 style="text-align: center;">Průměr známek</h1>
             </div>
         </div>
-        <div class="columns">
-            <div class="column">
-                <div class="accordion">
-                    <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-                    <label class="accordion-header" for="accordion-1">
-                        <i class="icon icon-arrow-right mr-1"></i>
-                        <h4>Jak na to</h4>
-                    </label>
-                    <div class="accordion-body">
-                        <ol style="margin-left: 3rem;">
-                            <li>Přihlaš se na <a href="http://isas.gytool.cz/prihlasit.php">iSAS</a>
-                            </li>
-                            <li>Zkopíruj své známky (na PC: <kbd>Ctrl+A</kbd> <kbd>Ctrl+C</kbd></li>
-                            <li>Vlož do pole Známky (nebo jen stiskni <kbd>Ctrl+V</kbd>)</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="columns">
-            <div class="column">
-                <div class="accordion">
-                    <input type="checkbox" id="accordion-" name="accordion-checkbox" hidden>
-                    <label class="accordion-header" for="accordion-">
-                        <i class="icon icon-arrow-right mr-1"></i>
-                        <h4>Často kladené otázky</h4>
-                    </label>
-                    <div class="accordion-body">
-                        <dl>
-                            <dt>Q: Co se stalo s Better iSAS?</dt>
-                            <dd>Jeho provoz byl z finančních důvodů ukončen.</dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <div id="input" class="form-group">
-                    <label class="form-label" for="name">Známky</label>
-                    <input class="form-input" type="text" id="znamky" name="name" placeholder="Sem vlož svoje známky">
-                </div>
+        <div class="card pt-2">
 
+            <div class="columns">
+                <div class="column">
+                    <div class="accordion">
+                        <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+                        <label class="accordion-header" for="accordion-1">
+                            <i class="icon icon-arrow-right mr-1"></i>
+                            <h4>Jak na to</h4>
+                        </label>
+                        <div class="accordion-body">
+                            <ol>
+                                <li>Přihlaš se na <a href="https://isas.gytool.cz/isas/prubezna-klasifikace.php"
+                                        target="_blank">iSAS</a>
+                                </li>
+                                <li>Zkopíruj své známky (na PC: <kbd>Ctrl+A</kbd> <kbd>Ctrl+C</kbd></li>
+                                <li>Vlož do pole Známky (nebo jen stiskni <kbd>Ctrl+V</kbd>)</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="accordion">
+                        <input type="checkbox" id="accordion-" name="accordion-checkbox" hidden>
+                        <label class="accordion-header" for="accordion-">
+                            <i class="icon icon-arrow-right mr-1"></i>
+                            <h4>Často kladené otázky</h4>
+                        </label>
+                        <div class="accordion-body ml-2">
+                            <dl>
+                                <dt>Q: Co se stalo s Better iSAS?</dt>
+                                <dd>Jeho provoz byl z finančních důvodů ukončen.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div id="input" class="form-group">
+                        <label class="form-label" for="name">Známky</label>
+                        <input class="form-input" type="text" id="znamky" name="name"
+                            placeholder="Sem vlož svoje známky">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="divider"></div>
-        <div class="row">
-            <div class="column">
-                <table class="table table-striped table-hover">
-                    <thead>
-                        <tr>
-                            <th>Předmět</th>
-                            <th>Průměr</th>
-                        </tr>
-                    </thead>
-                    <tbody id="matches">
-                    </tbody>
-                </table>
+        <div class="card">
+            <div class="row">
+                <div class="column">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Předmět</th>
+                                <th>Průměr</th>
+                            </tr>
+                        </thead>
+                        <tbody id="matches">
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
+
     </div>
 
     <script src="index.js"></script>
