@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 
 <head>
     <meta charset="UTF-8">
@@ -21,13 +21,38 @@
         </div>
         <div class="columns">
             <div class="column">
-                <h3 style="margin-left: 1rem;">Jak na to</h3>
-                <ol style="margin-left: 3rem;">
-                    <li>Přihlaš se na <a href="http://isas.gytool.cz/prihlasit.php">iSAS</a>
-                    </li>
-                    <li>Zkopíruj své známky (na PC: <kbd>Ctrl+A</kbd> <kbd>Ctrl+C</kbd></li>
-                    <li>Vlož do pole Známky (nebo jen stiskni <kbd>Ctrl+V</kbd>)</li>
-                </ol>
+                <div class="accordion">
+                    <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+                    <label class="accordion-header" for="accordion-1">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        <h4>Jak na to</h4>
+                    </label>
+                    <div class="accordion-body">
+                        <ol style="margin-left: 3rem;">
+                            <li>Přihlaš se na <a href="http://isas.gytool.cz/prihlasit.php">iSAS</a>
+                            </li>
+                            <li>Zkopíruj své známky (na PC: <kbd>Ctrl+A</kbd> <kbd>Ctrl+C</kbd></li>
+                            <li>Vlož do pole Známky (nebo jen stiskni <kbd>Ctrl+V</kbd>)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <div class="accordion">
+                    <input type="checkbox" id="accordion-" name="accordion-checkbox" hidden>
+                    <label class="accordion-header" for="accordion-">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        <h4>Často kladené otázky</h4>
+                    </label>
+                    <div class="accordion-body">
+                        <dl>
+                            <dt>Q: Co se stalo s Better iSAS?</dt>
+                            <dd>Jeho provoz byl z finančních důvodů ukončen.</dd>
+                        </dl>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
