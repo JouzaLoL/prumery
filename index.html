@@ -13,28 +13,25 @@
 </head>
 
 <body>
-    <div class="container" style="width: 80%; margin-top: 3rem;">
+    <div class="container" style="margin-top: 1rem;">
         <div class="columns">
             <div class="column">
-                <h1>Průměr známek</h1>
+                <h1 style="text-align: center;">Průměr známek</h1>
             </div>
         </div>
         <div class="columns">
             <div class="column">
-                <h3>Jak na to</h3>
+                <h3 style="margin-left: 1rem;">Jak na to</h3>
                 <ol style="margin-left: 3rem;">
                     <li>Přihlaš se na <a href="http://isas.gytool.cz/prihlasit.php">iSAS</a>
                     </li>
-                    <li>Zkopíruj své průběžné známky. Z jednoho předmětu, nebo ze všech najednou</li>
+                    <li>Zkopíruj své známky (na PC: <kbd>Ctrl+A</kbd> <kbd>Ctrl+C</kbd></li>
                     <li>Vlož do pole Známky (nebo jen stiskni <kbd>Ctrl+V</kbd>)</li>
                 </ol>
             </div>
-            <div class="column" id="copy-demo">
-
-            </div>
         </div>
         <div class="row">
-            <div class="column col-6">
+            <div class="column">
                 <div id="input" class="form-group">
                     <label class="form-label" for="name">Známky</label>
                     <input class="form-input" type="text" id="znamky" name="name" placeholder="Sem vlož svoje známky">
@@ -45,7 +42,16 @@
         <div class="divider"></div>
         <div class="row">
             <div class="column">
-                <div id="matches"></div>
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Předmět</th>
+                            <th>Průměr</th>
+                        </tr>
+                    </thead>
+                    <tbody id="matches">
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
