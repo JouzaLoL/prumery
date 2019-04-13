@@ -14,12 +14,12 @@
 
 <body>
     <div class="container bg-purple">
-        <div class="columns">
-            <div class="column">
-                <h1 style="text-align: center;">Průměr známek</h1>
+        <div class="columns" style="position: relative; top: 25px;">
+            <div class="column" style="text-align: center;">
+                <h1 style="display:inline-block; padding: 10px;" class="card">Průměr známek</h1>
             </div>
         </div>
-        <div class="card pt-2">
+        <div class="card" style="padding-top: 20px;">
             <div class="columns">
                 <div class="column">
                     <div class="accordion">
@@ -34,7 +34,8 @@
                                         href="https://isas.gytool.cz/isas/prubezna-klasifikace.php?zobraz=predmety"
                                         target="_blank">iSAS</a>
                                 </li>
-                                <li>Zkopíruj všechny své známky ze všech předmětů (na PC: <kbd>Ctrl+A</kbd> <kbd>Ctrl+C</kbd>)</li>
+                                <li>Zkopíruj všechny své známky ze všech předmětů (na PC: <kbd>Ctrl+A</kbd>
+                                    <kbd>Ctrl+C</kbd>)</li>
                                 <li>Vlož do pole Známky (nebo jen stiskni <kbd>Ctrl+V</kbd>)</li>
                             </ol>
                         </div>
@@ -58,12 +59,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="column">
+            <div class="divider" style="margin: 0;"></div>
+            <div class="row" style="margin-bottom: -10px;">
+                <div class="column" style="padding: 0;">
                     <div id="input" class="form-group">
-                        <label class="form-label" for="name">Známky</label>
+                        <!-- <label class="form-label" for="name">Známky</label> -->
                         <input class="form-input" type="text" id="znamky" name="name"
-                            placeholder="Sem vlož svoje známky">
+                            placeholder="Sem vlož svoje známky" style="padding: 15px 15px; height: 100%">
                     </div>
                 </div>
             </div>
@@ -86,8 +88,8 @@
                 </div>
             </div>
         </div>
-        <div class="text-center text-light">&copy; <a href="https://portfolio.zlepsi.me" class="text-light">Josef Vacek</a> - <a
-                href="mailto:vacekj@outlook.com" class="text-light">Kontakt</a></div>
+        <div class="text-center">&copy; <a href="https://portfolio.zlepsi.me">Josef
+                Vacek</a> - <a href="mailto:vacekj@outlook.com">Kontakt</a></div>
     </div>
 
     <script src="index.js"></script>
